@@ -11,8 +11,19 @@ import Foundation
 class Videos {
     
     private var _vName: String
-    private var _vImageUrl:String
-    private var _vVideoUrl:String
+    private var _Rights: String
+    private var _Price: String
+    private var _vImageUrl: String
+    private var _vArtist: String
+    private var _vVideoUrl: String
+    private var _vImid: String
+    private var _vGenre: String
+    private var _vLinkToiTunes: String
+    private var _vReleaseDate: String
+    
+    
+    //variable gets created from the UI
+    var vImageData: NSData?
     
     //make getter
     
@@ -20,12 +31,40 @@ class Videos {
         return _vName
     }
     
+    var vRights: String {
+        return _Rights
+    }
+    
+    var vPrice: String {
+        return _Price
+    }
+    
     var vImageUrl: String {
         return _vImageUrl
     }
     
+    var vArtist: String {
+        return _vArtist
+    }
+    
     var vVideoUrl: String {
         return _vVideoUrl
+    }
+    
+    var vImid: String {
+        return _vImid
+    }
+    
+    var vGenre: String {
+        return _vGenre
+    }
+    
+    var vLinkToiTunes: String {
+        return _vLinkToiTunes
+    }
+    
+    var vReleaseDate String {
+        return _vReleaseDate
     }
     
     init(data: JSONDictionary) {
